@@ -24,7 +24,8 @@
         position: relative;
         background: white;
         /* top: -40px; */
-        padding-top: 50px
+        padding-top: 50px;
+        min-height: 100vh;
     }
 
     .search {
@@ -41,8 +42,11 @@
         top: 430px;
     <?php endif; ?>
     }
-}
+
+    #member_sidebar {
+        min-height: 100vh;
+    }
 </style>
 <video autoplay muted loop id="myVideo" style="width: 100%;position: absolute;">
-    <source src="<?= SWB ?>template/default/assets/videos/rain.mp4" type="video/mp4">
+    <source src="<?= SWB ?>template/<?= basename(dirname(__DIR__)) ?>/assets/videos/rain.mp4" type="video/mp4">
 </video>
